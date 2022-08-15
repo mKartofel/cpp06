@@ -6,7 +6,7 @@
 /*   By: vfiszbin <vfiszbin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/14 13:48:25 by vfiszbin          #+#    #+#             */
-/*   Updated: 2022/08/15 16:40:51 by vfiszbin         ###   ########.fr       */
+/*   Updated: 2022/08/15 17:19:40 by vfiszbin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -294,7 +294,6 @@ std::ostream & operator<<(std::ostream & o, Convert const & c)
 		std::cout << "Conversion error" << std::endl;
 	else
 		{
-			// o.precision(15);
 			c.printCharValue();
 			c.printIntValue();
 			c.printFloatValue();

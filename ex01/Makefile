@@ -6,7 +6,7 @@
 #    By: vfiszbin <vfiszbin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/14 13:44:17 by vfiszbin          #+#    #+#              #
-#    Updated: 2022/08/15 16:41:49 by vfiszbin         ###   ########.fr        #
+#    Updated: 2022/08/15 16:42:00 by vfiszbin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = ex00
+NAME = ex01
 
 SOURCES := $(wildcard *.cpp)
 OBJECTS := $(patsubst %.cpp,%.o,$(SOURCES))
