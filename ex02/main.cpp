@@ -6,7 +6,7 @@
 /*   By: vfiszbin <vfiszbin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 17:49:16 by vfiszbin          #+#    #+#             */
-/*   Updated: 2022/08/15 18:04:18 by vfiszbin         ###   ########.fr       */
+/*   Updated: 2022/09/10 15:31:14 by vfiszbin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,21 +52,21 @@ void	identify(Base &p)
 	//If dynamic_cast is used to convert to a reference type and the conversion is not possible, an exception of type bad_cast is thrown instead
 	try
 	{
-		dynamic_cast<A &>(p);
+		(void) dynamic_cast<A &>(p);
 		std::cout << "A" << std::endl;
 	}
 	catch(const std::exception& e) {}
 	
 	try
 	{
-		dynamic_cast<B &>(p);
+		(void) dynamic_cast<B &>(p);
 		std::cout << "B" << std::endl;
 	}
 	catch(const std::exception& e) {}
 
 	try
 	{
-		dynamic_cast<C &>(p);
+		(void) dynamic_cast<C &>(p);
 		std::cout << "C" << std::endl;
 	}
 	catch(const std::exception& e) {}
